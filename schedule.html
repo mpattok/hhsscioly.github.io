@@ -16,7 +16,7 @@ var content = `
 <p>The schedule for the 2019-2020 school year will be finalized at the first meeting.</p>
 <div width="100%" style="text-align: center;">
 <button id="switcheroo">For a different look, click here to switch it to <span id="whatIsIt">a Google Calendar</span></button><br>
-<div id="calendarHere"></div>
+<div id="calendarHere" style="display: inline-block;"></div>
 <iframe id="googleCalendar" src="https://calendar.google.com/calendar/embed?src=hhs.scio%40gmail.com&ctz=America%2FDetroit" style="border: 0; display: none;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 `;
@@ -30,11 +30,11 @@ var content = `
       if(pos == 0) {
         pos = 1;
         calendarHere.style.display = "none";
-        googleCalendar.style.display = "block";
+        googleCalendar.style.display = "inline-block";
         whatIsIt.innerHTML = "a javascript calendar";
       } else {
         pos = 0;
-        calendarHere.style.display = "block";
+        calendarHere.style.display = "inline-block";
         googleCalendar.style.display = "none";
         whatIsIt.innerHTML = "a Google Calendar";
       }
