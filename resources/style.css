@@ -165,6 +165,18 @@ img {
   max-height: 100%;
   image-orientation: from-image;
 }
+#realCalendar table {
+ table-layout: fixed;
+  width: 100%;
+}
+
+#realCalendar td {
+  width: 14%;
+  height: 5em;
+  text-align: left;
+  vertical-align: text-top;
+  padding: 0.3em;
+}
 @media only screen and (max-width: 1365px) {
   body {width: 80%; margin-left: 10%;}
   html {background: linear-gradient(90deg, #CECFFF, #0B1692 9%, #0B1692 91%, #CECFFF);}
