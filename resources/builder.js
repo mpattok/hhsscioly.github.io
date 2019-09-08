@@ -6,7 +6,7 @@ headStuff.innerHTML =
 <meta name="keywords" content="science, olympiad, scio, scioly, hastings, high, school, hs, hhs, saxon, saxons, ` + keywords + `">
 <meta name="description" content="Hastings High School, Hastings, MI. - Science Olympiad - `+description+`">
 <meta name="author" content="Matthew Pattok">
-<link rel="shortcut icon" href="`+toRoot+`resources/icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="`+toRoot+`resources/icon.ICO" type="image/x-icon">
 `;
 bodyStuff.innerHTML = 
 `<header style="background-color: #0B1692;">
