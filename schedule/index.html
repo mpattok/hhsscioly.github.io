@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head id="headStuff">
+<meta name="description" content="The Schedule for the Hastings High School 2019-2020 Science Olympiad season has been decided! It will be fully cemented at the first meeting. This page includes a calendar and a list of all the invitationals we'll be attending. Current invitationals scheduled: Portage, Haslett, WOSO, U of M (overnight), Allendale, and regionals at WMU.">
+<meta name="author" content="Matthew Pattok">
+<title>Schedule | Invitationals and Regionals - Calendar | HHS Science Olympiad</title>
+</head>
+<body id="bodyStuff"></body>
+<script src = "calendar-events.js"></script>
+<script>
+var title = "Schedule";
+var toRoot = "../";
+var links = ["../","../events/","../pictures"];
+var linkNames = ["Home","Events","Pictures"];
+var content = `
+<h1>Schedule</h1>
+<p>The schedule for the 2019-2020 school year will be finalized at the first meeting.</p>
+<div id="schedule"></div>
+<div width="100%" style="text-align: center;">
+<button id="switcheroo">For a different look, click here to switch it to <span id="whatIsIt">a Google Calendar</span></button><br>
+<iframe id="jsCalendar" src="calendar.html" style="border: 0; display: inline-block;" width="800" height="700" frameborder="0"></iframe>
+<iframe id="googleCalendar" src="https://calendar.google.com/calendar/embed?src=hhs.scio%40gmail.com&ctz=America%2FDetroit" style="border: 0; display: none;" width="800" height="600" frameborder="0"></iframe>
+</div>
+`;
+</script>
+<script src="../resources/builder.js"></script>
+<script>
+  //generate schedule from calendar-events.js
+  var eventsSchedule = "<table>\n<tbody>";
+  for(var x = 0; x < events.length; x++) {
+    if(events[x][2]) {
+      eventsSchedule = eventsSchedule + "<tr><td style='padding: 1em;'><b>" + events[x][0] + "</b></td><td>" + events[x][1] + "</td></tr>";
+    }
+  }
+  eventsSchedule = eventsSchedule + "</tbody>\n</table>";
+  schedule.innerHTML = eventsSchedule;
+
+  //switch between js calendar and google calendar widget on button click
+  var jsCal = true;
+  switcheroo.onclick = function() {
+    if(jsCal) {
+      jsCal = false;
+      jsCalendar.style.display = "none";
+      googleCalendar.style.display = "inline-block";
+      whatIsIt.innerHTML = "a javascript calendar";
+    } else {
+      jsCal = true;
+      jsCalendar.style.display = "inline-block";
+      googleCalendar.style.display = "none";
+      whatIsIt.innerHTML = "a Google Calendar";
+    }
+  }
+  </script>
+</html>

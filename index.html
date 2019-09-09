@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head id="headStuff">
+<meta name="description" content="The website for the Hastings High School Science Olympiad Team. Learn what Science Olympiad is and how to get involved. The site also has the Saxon schedule, the season's events, and picture galleries.">
+<meta name="author" content="Matthew Pattok">
+<title>HHS Science Olympiad</title>
+</head>
+<body id="bodyStuff"></body>
+<script>
+var toRoot = "";
+var title = "Home";
+var links = ["schedule/","events/","pictures/"];
+var linkNames = ["Schedule","Events","Pictures"];
+var content = `
+<div width="100%" style="text-align: center;">
+<div width="100%" style="display: inline-block;">
+<table style="max-width: 800px;">
+<tr>
+<th>
+<button id="left">&#10094;</button>
+</th>
+<th id="picture" colspan="3"></th>
+<th>
+<button id="right">&#10095;</button>
+</th>
+</tr>
+<tr>
+<td></td>
+<td id="pause">&#10074;&#10074;</td>
+<td id="below"><span id="caption" style="text-align: center;"></span><br><span id="dots" style="text-align: center;"></span></td>
+<td style="width: 5%"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+<h1>What is Science Olympiad?</h1>
+<p>
+Science Olympiad is a nationwide series of academic competitions. Science Olympiad competitions are like academic track meets, consisting of 23 team events. Each year, a portion of the events are rotated out and replaced with new events. By combining events from all disciplines, Science Olympiad encourages a wide cross-section of students to get involved. A student doesn't have to have prior knowledge in a topic to compete - part of the fun is learning the material and then showing what you've learned.
+<br><br>
+There are Science Olympiad competitions at regional, state, and national competitions. There are also invitationals, which are held by competing schools. Teams can consist of up to 15 students. Since many schools have more than 15 students (HHS usually has around 30), a school can have more than one team at invitationals and regionals.
+<br><br>
+There are test events and build events. For test events, students must study a topic, then, at the competition take a test on it. Some test events allow tools such as notes or calculators. For build events, students build a device, which then perform at competitions.
+</p>
+<h1>How to Get Involved:</h1>
+<p>Science Olympiad takes place once a year, over the span of most of the school year. Students can join at the beginning of the year by attending one of the start of the year meetings and signing up. The start of the year meeting dates for the 2019-2020 school year have yet to be determined. Each year, there are typically around five invitationals before the regional competition. All competitions are on Saturdays. Students leave on a bus from the High School at around 6 AM. Events run from around 8-2, and the awards ceremony is usually around 4. Students usually get back to the High School around 8 PM.<br>
+If the school goes to an invitational at a far away school (such as Frankenmuth), the team leaves on the Friday before the competition day and spends the night with pizza and studying at a hotel.
+<br><br>
+The costs of Science Olympiad can depend on the event. The Science Olympiad team applies for grants every year to mediate the cost and cover individual costs if they arise. If you might have problems in the event that there are individual costs, all you have to do is talk with Mr. Buehler and he can help you out. Money should never be why you don't get to participate-- and Hastings makes sure it won't be.
+<br><br><br>
+You can email Mr. Buehler at <a href="mailto:mbuehler@hassk12.org" target="_blank">mbuehler@hassk12.org</a></p>`;
+var pics = ["resources/school-logo.jpg","pictures/2018-19/allendale-2019.png","pictures/2018-19/woso-2019.jpg","pictures/2018-19/states-2019.jpg"];
+var captions = ["Hastings Saxons Science Olympiad","The Saxons at Allendale High School for a 2019 Invitational","The Saxons at West Ottawa High School for a 2019 Invitational","The Saxons at MSU for the 2019 state finals"];
+</script>
+<script src="resources/builder.js"></script>
+<script src="resources/gallery-script.js"></script>
+</html>
