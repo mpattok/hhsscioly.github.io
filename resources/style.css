@@ -32,6 +32,10 @@ body {
 #dots, input, label {
   padding: 0px;
 }
+.iframeDiv {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
 input[type=radio] {
   opacity: 0;
 }
