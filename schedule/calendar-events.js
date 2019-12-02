@@ -15,5 +15,5 @@ var events = [
   ["2-8-2020","<b>Frankenmuth Invitational</b><br>Staying night in hotel Friday night, competition Saturday",true],
   ["2-22-2020","<b>Allendale Invitational</b>",true],
   ["3-21-2020","<b>WMU - Regionals</b>",true],
-  ["4-25-2019","<b>States</b><br>If we make it top 17 kids go. You can leave early after your events for prom.",true]
+  ["4-25-2020","<b>States</b><br>If we make it top 17 kids go. You can leave early after your events for prom.",true]
 ];
